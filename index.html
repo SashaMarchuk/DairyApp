@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Dairy App</title>
+</head>
+
+<body>
+  <aside class="aside">
+    <h1 class="aside__title">Dairy App</h1>
+    <div class="aside__subtitle">Comment with no sense</div>
+  </aside>
+  <section class="items">
+    <div class="container">
+      <h2 class="items__title">Items</h2>
+      <div class="items__inputBox">
+        <input class="items__inputBox-input" type="text" name="tasks" id="tasks" placeholder="Type name here..."
+          onkeyup="buttonStatus()">
+        <button class="items__inputBox-button-add" onclick="addItemOnClick()">Add new</button>
+      </div>
+      <div class="items__tasks">
+      </div>
+    </div>
+  </section>
+  <section class="comments container" id="comments"></section>
+  <script src="/script/script.js"></script>
+</body>
+
+</html>
