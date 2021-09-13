@@ -69,7 +69,7 @@ const addComment = () => {
   const key = window.event;
 
   if (key.keyCode === 10 && key.target.value.length > 0) {
-    // 13 - Enter
+    // 10 - Ctrl + Enter
     window.event.preventDefault();
     const items = getItems();
     const selectedItem = items.find((i) => i.id == clickedId);
