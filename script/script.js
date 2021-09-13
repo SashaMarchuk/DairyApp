@@ -68,8 +68,8 @@ const showItemComments = (id) => {
 const addComment = () => {
   const key = window.event;
 
-  if (key.keyCode === 13 && !key.shiftKey && event.target.value.length > 0) {
-    // 13 - Enter, 16 - Shift
+  if (key.keyCode === 10 && key.target.value.length > 0) {
+    // 13 - Enter
     window.event.preventDefault();
     const items = getItems();
     const selectedItem = items.find((i) => i.id == clickedId);
